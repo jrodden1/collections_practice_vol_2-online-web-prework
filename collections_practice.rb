@@ -49,7 +49,7 @@ end
 def count_elements(arrayOfHashes)
   outputArrOfHash = [{}]
 
-  key
+
   arrayOfHashes.each.with_index do |hash, index|
     hash.each do |key, value|
       outputArrOfHash.each do |outhash, outindex|
