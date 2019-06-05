@@ -28,3 +28,13 @@ def contain_a(array)
   #Logic looks a little funny, but its asking does the matchfound array include a "false" -- if that is true, then the answer is false, else the answer for #begins_with_r should be true.
   matchfoundArr
 end
+
+def first_wa(array)
+  firstWaOut = ""
+  array.each do |element|
+    if element.include?("wa") == true
+      return firstWaOut = element
+    end
+  end
+  firstWaOut
+end
