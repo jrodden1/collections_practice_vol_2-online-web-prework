@@ -47,7 +47,7 @@ def remove_non_strings(array)
 end
 
 def count_elements(arrayOfHashes)
-  outputArrOfHash = [{}]
+  outputArrOfHash = []
 
 
   arrayOfHashes.each.with_index do |hash, index|
@@ -55,7 +55,7 @@ def count_elements(arrayOfHashes)
       outputArrOfHash.each.with_index do |outhash, outindex|
         binding.pry
         if outhash.has_value?(value) == false
-          outputArrOfHash[outindex] = {key => value, :count => 1}
+          outputArrOfHash << {key => value, :count => 1}
           binding.pry
         else
           outputArrOfHash[outindex][:count] = outputArrOfHash[outindex][:count] + 1
