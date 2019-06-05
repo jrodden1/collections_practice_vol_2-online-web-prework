@@ -57,9 +57,9 @@ def count_elements(arrayOfHashes)
         outputArrOfHash.each.with_index do |outhash, outindex|
           if outhash.has_value?(value) == false
             outputArrOfHash << {key => value, :count => 1}
+            break
           else
             outputArrOfHash[outindex][:count] += 1
-            return
           end
         end
       end
