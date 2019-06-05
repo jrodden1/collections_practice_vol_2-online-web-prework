@@ -101,7 +101,7 @@ end
 def organize_schools(nestedHash)
   nestedHash.each do |school, nesth1|
     nesth1.each do |key, value|
-      
+
 binding.pry
     end 
   end
