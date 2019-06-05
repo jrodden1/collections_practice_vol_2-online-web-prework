@@ -78,6 +78,7 @@ def merge_data(keys, data)
         outHash.each do |hash|
           if hash.has_key?(:awesomeness) == false
             hash[key] = value
+            break
           end
         end
       end
