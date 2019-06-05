@@ -45,3 +45,22 @@ def remove_non_strings(array)
     num.class == String
   end
 end
+
+def count_elements(arrayOfHashes)
+  outputArrOfHash = [{}]
+
+  key
+  arrayOfHashes.each.with_index do |hash, index|
+    hash.each do |key, value|
+      outputArrOfHash.each do |outhash, outindex|
+        
+        if outputArrOfHash[index].has_key?(key) == false
+          outputArrOfHash[index][key]
+          outputArrOfHash[index][key] = value
+          outputArrOfHash[index][:count] = 1
+        else
+          if 
+          outputArrOfHash[index][:count] = outputArrOfHash[index][:count] + 1
+
+  outputArrOfHash
+end
