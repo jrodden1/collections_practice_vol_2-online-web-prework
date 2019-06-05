@@ -70,22 +70,7 @@ def count_elements(arrayOfHashes)
 end
 
 def merge_data(keys, data)
-  outArr = []
-
-  keys.each do |hashArr|
-    binding.pry
-    hashArr.each do |hash|
-      binding.pry
-      mergedHash = {}
-      hash.each do |key, value|
-        binding.pry
-        mergedHash[key] = value
-        binding.pry
-      end
-    outArr << mergedHash
-    binding.pry
-    end
-  end
+  outHash = keys
 
   data.each do |hashArr|
     binding.pry
