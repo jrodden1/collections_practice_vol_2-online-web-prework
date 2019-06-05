@@ -47,7 +47,7 @@ def remove_non_strings(array)
 end
 
 def count_elements(arrayOfHashes)
-  outputArrOfHash = []
+  outputArrOfHash = [{}]
 
 
   arrayOfHashes.each.with_index do |hash, index|
