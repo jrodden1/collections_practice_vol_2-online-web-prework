@@ -56,7 +56,7 @@ def count_elements(arrayOfHashes)
         if outhash.has_key?(key) == false
           outputArrOfHash[outindex] = {key => value, :count => 1}
         else
-          outputArrOfHash[outindex][:count] = outputArrOfHash[index][:count] + 1
+          outputArrOfHash[outindex][:count] = outputArrOfHash[outindex][:count] + 1
         end
       end
     end
