@@ -58,7 +58,7 @@ def count_elements(arrayOfHashes)
           if outhash.has_value?(value) == false
             outputArrOfHash << {key => value, :count => 1}
           else
-            outputArrOfHash[outindex][:count] = outputArrOfHash[outindex][:count] + 1
+            outputArrOfHash[outindex][:count] += 1
             binding.pry
           end
         end
