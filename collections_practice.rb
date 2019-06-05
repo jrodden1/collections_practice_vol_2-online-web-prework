@@ -37,7 +37,7 @@ def first_wa(array)
   #end
 
   array.each do |element|
-    if element.include?("wa") == true && element.class == String
+    if element.class == String && element.include?("wa") == true
       return firstWaOut = element
     end
   end
