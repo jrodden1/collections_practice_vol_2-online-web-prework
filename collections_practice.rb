@@ -97,3 +97,5 @@ def find_cool(hashArr)
   end
   isCool
 end
+
+def organize_schools(hashArr)
