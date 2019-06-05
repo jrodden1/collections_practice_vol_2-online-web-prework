@@ -48,7 +48,7 @@ end
 
 def count_elements(arrayOfHashes)
   require "pry"
-  outputArrOfHash = [{}]
+  outputArrOfHash = []
   outputHash = {}
 
   arrayOfHashes.each.with_index do |hash, index|
