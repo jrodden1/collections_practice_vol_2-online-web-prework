@@ -53,21 +53,15 @@ def count_elements(arrayOfHashes)
     binding.pry
     hash.each do |key, value|
       binding.pry
-      if outputArrOfHash
-      outputArrOfHash.each.with_index do |outhash, outindex|
-        binding.pry
-        if outputArrOfHash[outindex].class != Hash
-          outputArrOfHash[outindex] = {key => value, :count => 1}
-        end
-        binding.pry
-        if outhash.class == Hash && outhash.has_value?(value) == false
+      if outputArrOfHash == []
+        outputArrOfHash[outindex] = {key => value, :count => 1}
+      else 
+        outputArrOfHash.each.with_index do |outhash, outindex|
+        if outhash.has_value?(value) == false
           outputArrOfHash << {key => value, :count => 1}
-          binding.pry
         else
           outputArrOfHash[outindex][:count] = outputArrOfHash[outindex][:count] + 1
-          binding.pry
         end
-        binding.pry
       end
     end
   end
