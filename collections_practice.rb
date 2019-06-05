@@ -73,19 +73,18 @@ def merge_data(keys, data)
   outArr = []
   mergedHash = {}
 
-    keys.each do |hash|
-      hash.each do |key, value|
-        mergedHash[key] = value
-      end
-      data.each do |datahash|
-        datahash.each do |name, attributes|
-          attributes.each do |datakey, datavalue|
-            mergedHash[datakey] = datavalue
-          end
+  keys.each do |hash|
+    hash.each do |key, value|
+      mergedHash[key] = value
+    end
+    data.each do |datahash|
+      datahash.each do |name, attributes|
+        attributes.each do |datakey, datavalue|
+          mergedHash[datakey] = datavalue
         end
       end
-      outArr << mergedHash
-
     end
-
+    outArr << mergedHash
+  end
+  outArr
 end
