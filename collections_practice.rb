@@ -61,6 +61,7 @@ def count_elements(arrayOfHashes)
           outputArrOfHash[outindex][:count] = outputArrOfHash[outindex][:count] + 1
           binding.pry
         end
+        binding.pry 
       end
     end
   end
