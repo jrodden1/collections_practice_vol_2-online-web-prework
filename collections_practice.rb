@@ -47,20 +47,21 @@ def remove_non_strings(array)
 end
 
 def count_elements(arrayOfHashes)
-  outputArrOfHash = [{}]
-
+  outputArrOfHash = []
+  outputHash = {}
 
   arrayOfHashes.each.with_index do |hash, index|
     hash.each do |key, value|
       outputArrOfHash.each.with_index do |outhash, outindex|
         #binding.pry
-        if outhash.has_value?(value) == false && outindex == 0
+        if outhash.class != Hash
           outputArrOfHash[outindex] = {key => value, :count => 1}
-          #binding.pry
-          outindex += 1
+        end
+
+        if outhash.class == Hash && outhash.has_value?(value) == false
+          outputArrOfhash << {key => value, :count => 1}
         else
           outputArrOfHash[outindex][:count] = outputArrOfHash[outindex][:count] + 1
-          #binding.pry
         end
         #binding.pry
       end
