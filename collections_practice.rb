@@ -99,3 +99,5 @@ def find_cool(hashArr)
 end
 
 def organize_schools(hashArr)
+binding.pry
+end
