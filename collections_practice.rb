@@ -32,10 +32,6 @@ end
 def first_wa(array)
   firstWaOut = ""
 
-  #sanitizedArr = array.map do |element|
-  #  element.to_s
-  #end
-
   array.each do |element|
     if element.class == String && element.include?("wa") == true
       return firstWaOut = element
