@@ -19,12 +19,12 @@ def begins_with_r(tools)
 end
 
 def contains_a(array)
-  matchfound = []
+  matchfoundArr = []
   array.each do |element|
-    if element.include?("a") == true || element.include?("a") == true
-      matchfound << element
+    if element.include?("a") == true || element.include?("A") == true
+      matchfoundArr << element
     end
   end
   #Logic looks a little funny, but its asking does the matchfound array include a "false" -- if that is true, then the answer is false, else the answer for #begins_with_r should be true.
-  matchfound
+  matchfoundArr
 end
