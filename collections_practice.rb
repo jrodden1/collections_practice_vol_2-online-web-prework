@@ -8,7 +8,8 @@ def begins_with_r(tools)
       matchfound << true
     end
   end
-  if matchfound.include?(false)
+  #Logic looks a little funny, but its asking does the matchfound array include a "false" -- if that is true, then the answer is false, else the answer for #begins_with_r should be true. 
+  if matchfound.include?(false) == true
     answer = false
   else
     answer = true
