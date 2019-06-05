@@ -47,12 +47,13 @@ def remove_non_strings(array)
 end
 
 def count_elements(arrayOfHashes)
-  outputArrOfHash = []
+  outputArrOfHash = [{}]
   outputHash = {}
 
   arrayOfHashes.each.with_index do |hash, index|
     binding.pry
     hash.each do |key, value|
+      binding.pry
       outputArrOfHash.each.with_index do |outhash, outindex|
         binding.pry
         if outhash.class != Hash
