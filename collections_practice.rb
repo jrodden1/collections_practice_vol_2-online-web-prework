@@ -98,6 +98,8 @@ def find_cool(hashArr)
   isCool
 end
 
-def organize_schools(hashArr)
+def organize_schools(nestedHash)
+  nestedHash.each do |school, nesth1|
+    
 binding.pry
 end
