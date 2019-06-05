@@ -87,5 +87,5 @@ def merge_data(keys, data)
 end
 
 def find_cool(hashArr)
-  binding.pry 
+  binding.pry
 end
