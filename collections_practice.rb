@@ -52,7 +52,7 @@ def count_elements(arrayOfHashes)
   arrayOfHashes.each.with_index do |hash, index|
     hash.each do |key, value|
       if outputArrOfHash == []
-        outputArrOfHash[outindex] = {key => value, :count => 1}
+        outputArrOfHash[0] = {key => value, :count => 1}
       else
         outputArrOfHash.each.with_index do |outhash, outindex|
           if outhash.has_value?(value) == false
