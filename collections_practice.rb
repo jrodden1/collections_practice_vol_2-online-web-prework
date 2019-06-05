@@ -76,6 +76,7 @@ def merge_data(keys, data)
     datHash.each do |datKey, datValue|
       datValue.each do |key, value|
         outHash.each do |hash|
+          binding.pry
           if hash.has_key?(:awesomeness) == false
             hash[key] = value
             break
