@@ -1,6 +1,6 @@
 require 'pry'
 def begins_with_r(tools)
-  #This will be the boolean answer that is returned at the end of the method.
+  #answer var will be the boolean answer that is returned at the end of the method.
   answer = nil
   matchfound = []
   tools.each do |tool|
@@ -17,3 +17,4 @@ def begins_with_r(tools)
     answer = true
   end
 end
+
