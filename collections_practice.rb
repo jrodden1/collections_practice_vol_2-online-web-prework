@@ -6,5 +6,5 @@ def begins_with_r(tools)
       matchfound = true
     end
   end
-  matchfound = true
+  matchfound
 end
