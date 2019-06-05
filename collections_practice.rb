@@ -81,7 +81,7 @@ def merge_data(keys, data)
           binding.pry
             if hash.has_value?(datKey) == true
                 binding.pry
-              outHash[key] = value
+              hash[key] = value
             end
           end
         end
