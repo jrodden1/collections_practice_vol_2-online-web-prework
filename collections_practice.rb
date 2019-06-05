@@ -72,21 +72,12 @@ end
 def merge_data(keys, data)
   outHash = keys
 
-  data.each do |hashArr|
-    binding.pry
-    hashArr.each do |hash|
-      binding.pry
-      hash.each do |namekey|
-        binding.pry
-        namekey.each do |key, value|
-          binding.pry
-          outArr.each do |mhash|
-            mhash[key] = value
-            binding.pry
-          end
-        end
+  data.each do |datKey, datHash|
+    datHash.each do |key, value|
+      outHash.each do |outHash|
+        outhash[key] = value
       end
     end
   end
-    outArr << mergedHash
+  outHash
 end
