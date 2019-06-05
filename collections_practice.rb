@@ -81,7 +81,6 @@ def merge_data(keys, data)
             outHash[key] = value
           end
         end
-
       end
     end
   end
