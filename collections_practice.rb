@@ -18,7 +18,7 @@ def begins_with_r(tools)
   end
 end
 
-def contains_a(array)
+def contain_a(array)
   matchfoundArr = []
   array.each do |element|
     if element.include?("a") == true || element.include?("A") == true
