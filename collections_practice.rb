@@ -84,8 +84,8 @@ def merge_data(keys, data)
 
   data.each do |hashArr|
     hashArr.each.with_index do |hash, index|
-      hash.each do |name, attributes|
-        attributes.each do |key, value|
+      hash.each do |namekey, attribs|
+        attribs.each do |key, value|
           outArr.each do |mhash|
             mhash[key] = value
           end
