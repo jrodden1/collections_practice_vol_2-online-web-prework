@@ -36,7 +36,7 @@ def first_wa(array)
   #  element.to_s
   #end
 
-  sanitizedArr.each do |element|
+  array.each do |element|
     if element.include?("wa") == true && element.class == String
       return firstWaOut = element
     end
