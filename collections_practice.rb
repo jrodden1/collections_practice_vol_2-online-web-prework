@@ -89,7 +89,9 @@ end
 def find_cool(hashArr)
   isCool = []
   hashArr.each do |hash|
-    binding.pry
+    hash.each do |key, value| 
+      binding.pry
+    end 
   end
 
 
