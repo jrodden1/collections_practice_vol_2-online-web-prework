@@ -90,7 +90,6 @@ def find_cool(hashArr)
   isCool = []
   hashArr.each do |hash|
     hash.each do |key, value|
-      binding.pry
       if key == :temperature && value == "cool"
         isCool << hash
       end
