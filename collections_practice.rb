@@ -31,7 +31,12 @@ end
 
 def first_wa(array)
   firstWaOut = ""
-  array.each do |element|
+
+  sanitizedArr = array.map do |element|
+    element.to_s
+  end
+  
+  sanitizedArr.each do |element|
     if element.include?("wa") == true
       return firstWaOut = element
     end
