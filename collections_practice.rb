@@ -76,7 +76,7 @@ def merge_data(keys, data)
     datHash.each do |datKey, datValue|
       datValue.each do |key, value|
         binding.pry
-          
+
         end
       end
     end
