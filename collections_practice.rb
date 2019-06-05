@@ -53,14 +53,15 @@ def count_elements(arrayOfHashes)
   arrayOfHashes.each.with_index do |hash, index|
     hash.each do |key, value|
       outputArrOfHash.each do |outhash, outindex|
-
-        if outputArrOfHash[index].has_key?(key) == false
-          outputArrOfHash[index][key]
-          outputArrOfHash[index][key] = value
-          outputArrOfHash[index][:count] = 1
+        if outhash.has_key?(key) == false
+          outputArrOfHash[outindex][key]
+          outputArrOfHash[outindex][key] = value
+          outputArrOfHash[outindex][:count] = 1
         else
-          if
-          outputArrOfHash[index][:count] = outputArrOfHash[index][:count] + 1
-
+          outputArrOfHash[outindex][:count] = outputArrOfHash[index][:count] + 1
+        end
+      end
+    end
+  end
   outputArrOfHash
 end
