@@ -17,4 +17,3 @@ def begins_with_r(tools)
     answer = true
   end
 end
-
