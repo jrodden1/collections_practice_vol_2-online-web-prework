@@ -39,3 +39,9 @@ def first_wa(array)
   end
   firstWaOut
 end
+
+def remove_non_strings(array)
+  outputArr = array.select do |num|
+    num.class == String
+  end
+end
