@@ -51,6 +51,7 @@ def count_elements(arrayOfHashes)
   outputHash = {}
 
   arrayOfHashes.each.with_index do |hash, index|
+    binding.pry
     hash.each do |key, value|
       outputArrOfHash.each.with_index do |outhash, outindex|
         binding.pry
