@@ -77,7 +77,7 @@ def merge_data(keys, data)
       datValue.each do |key, value|
         binding.pry
         outHash.each do |hKey, kVal|
-          if outHash.has_value(datKey) == true
+          if outHash.has_value?(datKey) == true
               binding.pry
             outHash[key] = value
           end
