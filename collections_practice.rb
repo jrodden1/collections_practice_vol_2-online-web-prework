@@ -74,10 +74,12 @@ def merge_data(keys, data)
 
   data.each do |datHash|
     binding.pry
-    datHash.each do |key, value|
+    datHash.each do |datKey, datValue|
       binding.pry
-      outHash.each do |outHash|
-        outhash[key] = value
+      datValue.each do |key, value|
+        outHash.each do |outHash|
+          outhash[key] = value
+        end
       end
     end
   end
