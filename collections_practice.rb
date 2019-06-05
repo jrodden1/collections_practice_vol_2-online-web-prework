@@ -71,10 +71,10 @@ end
 
 def merge_data(keys, data)
   outArr = []
-  mergedHash = {}
 
   keys.each do |hashArr|
     hashArr.each do |hash|
+      mergedHash = {}
       hash.each do |key, value|
         mergedHash[key] = value
       end
