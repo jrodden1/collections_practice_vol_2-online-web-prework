@@ -110,13 +110,13 @@ def organize_schools(nestedHash)
         binding.pry
       else
         case value
-        when == "NYC"
+        when = "NYC"
           outputHash["NYC"] << school
           binding.pry
-        when == "SF"
+        when = "SF"
           outputHash["SF"] << school
           binding.pry
-        when == "Chicago"
+        when = "Chicago"
           outputHash["Chicago"] << school
           binding.pry
         end
