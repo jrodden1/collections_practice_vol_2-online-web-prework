@@ -123,6 +123,7 @@ def organize_schools(nestedHash)
       end
     end
   end
+end
   outputHash
 end
 
