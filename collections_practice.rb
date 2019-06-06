@@ -122,5 +122,6 @@ def organize_schools(nestedHash)
         binding.pry
       end
     end
+  end
   outputHash
 end
