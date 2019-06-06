@@ -118,12 +118,12 @@ def organize_schools(nestedHash)
         elsif value == "Chicago"
           outputHash["Chicago"] << school
           binding.pry
+        else
+          "bla"
         end
         binding.pry
       end
     end
-  end
-end
   outputHash
 end
 
