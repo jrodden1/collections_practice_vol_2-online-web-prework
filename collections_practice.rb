@@ -107,7 +107,7 @@ def organize_schools(nestedHash)
         schoolArr << school
         outputHash[value] = schoolArr
       else
-        case value 
+        case value
         when == "NYC"
           outputHash["NYC"] << school
         when == "SF"
@@ -119,9 +119,9 @@ def organize_schools(nestedHash)
     end
   end
 end
-        
+
 
 binding.pry
-    end 
+    end
   end
 end
