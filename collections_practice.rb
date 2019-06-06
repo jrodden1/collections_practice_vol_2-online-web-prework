@@ -99,8 +99,27 @@ def find_cool(hashArr)
 end
 
 def organize_schools(nestedHash)
+  outputHash = {}
   nestedHash.each do |school, nesth1|
     nesth1.each do |key, value|
+      schoolArr = []
+      if outputHash.has_key?(value) == false
+        schoolArr << school
+        outputHash[value] = schoolArr
+      else
+        case value 
+        when == "NYC"
+          outputHash["NYC"] << school
+        when == "SF"
+          outputHash["SF"] << school
+        when == "Chicago"
+          outputHash["Chicago"] << school
+        end
+      end
+    end
+  end
+end
+        
 
 binding.pry
     end 
