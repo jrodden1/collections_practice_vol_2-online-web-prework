@@ -103,23 +103,17 @@ def organize_schools(nestedHash)
   nestedHash.each do |school, nesth1|
     nesth1.each do |key, value|
       schoolArr = []
-      binding.pry
       if outputHash.has_key?(value) == false
         schoolArr << school
         outputHash[value] = schoolArr
-        binding.pry
       else
         if value == "NYC"
           outputHash["NYC"] << school
-          binding.pry
         elsif value == "SF"
           outputHash["SF"] << school
-          binding.pry
         elsif value == "Chicago"
           outputHash["Chicago"] << school
-          binding.pry
         end
-        binding.pry
       end
     end
   end
